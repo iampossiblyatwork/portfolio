@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>James Costello — Résumé</title>
+  <meta name="description" content="Résumé of James Costello — Service Operations & Product Support leader." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --paper:#ffffff; --ink:#0e1218; --ink-soft:#3c434d; --ink-faint:#8a929e;
+      --line:#e1e5ec; --accent:#1f5fe0; --paper-2:#f4f6fa;
+      --font:"Libre Franklin",system-ui,sans-serif; --mono:"IBM Plex Mono",monospace;
+    }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:var(--font); color:var(--ink); background:var(--paper-2); line-height:1.5; -webkit-font-smoothing:antialiased; }
+
+    /* toolbar (screen only) */
+    .toolbar {
+      position:sticky; top:0; z-index:10;
+      display:flex; justify-content:space-between; align-items:center;
+      max-width:850px; margin:0 auto; padding:16px 24px;
+    }
+    .toolbar a, .toolbar button {
+      font-family:var(--mono); font-size:13px; letter-spacing:.03em;
+      text-decoration:none; color:var(--ink); cursor:pointer;
+      border:1.5px solid var(--ink); background:transparent;
+      padding:10px 18px; border-radius:100px; transition:all .25s ease;
+    }
+    .toolbar .print { background:var(--ink); color:#fff; border-color:var(--ink); }
+    .toolbar .print:hover { background:var(--accent); border-color:var(--accent); }
+    .toolbar a:hover { background:var(--ink); color:#fff; }
+
+    .sheet {
+      max-width:850px; margin:0 auto 60px; background:var(--paper);
+      padding:54px 60px 60px; border:1px solid var(--line);
+      box-shadow:0 24px 60px rgba(20,35,70,.08);
+    }
+
+    header.cv-head { border-bottom:2px solid var(--ink); padding-bottom:22px; margin-bottom:26px; }
+    .cv-name { font-size:40px; font-weight:800; letter-spacing:-.03em; line-height:1; }
+    .cv-role { font-size:15px; color:var(--accent); font-weight:600; margin-top:8px; }
+    .cv-contact {
+      margin-top:16px; display:flex; flex-wrap:wrap; gap:6px 18px;
+      font-family:var(--mono); font-size:12.5px; color:var(--ink-soft);
+    }
+    .cv-contact a { color:var(--ink-soft); text-decoration:none; }
+    .cv-contact a:hover { color:var(--accent); }
+
+    section.block { margin-top:26px; }
+    h2.sec {
+      font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+      color:var(--accent); margin-bottom:14px;
+      border-bottom:1px solid var(--line); padding-bottom:7px;
+    }
+    p.summary { font-size:14.5px; color:var(--ink-soft); }
+
+    .comp { font-size:13.5px; color:var(--ink-soft); line-height:1.7; }
+
+    .job { margin-bottom:18px; break-inside:avoid; }
+    .job:last-child { margin-bottom:0; }
+    .job-top { display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; }
+    .job-title { font-size:15.5px; font-weight:700; }
+    .job-co { font-size:13.5px; color:var(--ink-soft); }
+    .job-date { font-family:var(--mono); font-size:11.5px; color:var(--ink-faint); white-space:nowrap; }
+    .job ul { margin:9px 0 0 18px; }
+    .job li { font-size:13.5px; color:var(--ink-soft); margin-bottom:5px; padding-left:3px; }
+
+    .two { display:grid; grid-template-columns:1fr 1fr; gap:8px 28px; }
+    .two .item { font-size:13.5px; color:var(--ink-soft); }
+    .two .item strong { color:var(--ink); font-weight:600; }
+
+    @media (max-width:680px){
+      .sheet{ padding:32px 24px; }
+      .cv-name{ font-size:32px; }
+      .two{ grid-template-columns:1fr; }
+    }
+
+    @media print {
+      @page { margin:14mm; }
+      body { background:#fff; }
+      .toolbar { display:none; }
+      .sheet { max-width:none; margin:0; padding:0; border:0; box-shadow:none; }
+      a { color:inherit; text-decoration:none; }
+      .job, section.block { break-inside:avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="index.html">← Portfolio</a>
+    <button class="print" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <article class="sheet">
+    <header class="cv-head">
+      <h1 class="cv-name">James Costello</h1>
+      <div class="cv-role">Service Operations &amp; Product Support Leader</div>
+      <div class="cv-contact">
+        <span>Novi, MI 48377</span>
+        <a href="tel:+14848024543">(484) 802-4543</a>
+        <a href="mailto:james@costellomail.net">james@costellomail.net</a>
+        <a href="https://linkedin.com/in/jamespcostello" target="_blank" rel="noopener">linkedin.com/in/jamespcostello</a>
+      </div>
+    </header>
+
+    <section class="block">
+      <h2 class="sec">Professional Summary</h2>
+      <p class="summary">
+        Service operations and product support leader with 10+ years scaling global, highly
+        technical support organizations. Builds data-driven systems and automation that turn
+        fragmented, manual operations into clear, prioritized, measurable performance. Owns
+        multimillion-dollar budgets and leads cross-functional, matrixed teams across
+        engineering, manufacturing, sales, and the C-suite. Executive MBA with deep technical
+        roots in metrology and new-product introduction.
+      </p>
+    </section>
+
+    <section class="block">
+      <h2 class="sec">Core Competencies</h2>
+      <p class="comp">
+        Global Product &amp; Service Support · New Product Introduction (NPI) Readiness ·
+        Process Automation &amp; System Design · BI Dashboards &amp; KPI Design ·
+        Escalation &amp; Operations Management · Cross-Functional &amp; Matrixed Leadership ·
+        Financial &amp; Cost Modeling · Data Extraction &amp; Mining (Snowflake, SQL, APIs) ·
+        Budget Ownership · Team Building &amp; Talent Development
+      </p>
+    </section>
+
+    <section class="block">
+      <h2 class="sec">Work Experience</h2>
+
+      <div class="job">
+        <div class="job-top">
+          <div><span class="job-title">Product Support Manager</span> <span class="job-co">— KLA Corporation, Ann Arbor, MI</span></div>
+          <span class="job-date">Mar 2024 – Present</span>
+        </div>
+        <ul>
+          <li>Direct a 15-person global organization (7 direct reports) across technical support, product engineering, sustaining service, and installation operations, coordinating teams across China, Germany, North America, and Korea to keep a high-mix instrument portfolio supported worldwide.</li>
+          <li>Architected and deployed a custom escalation-prioritization system — a full web application with AI-driven logic and live Snowflake data integration that ranks active cases by business and revenue impact — adopted organization-wide and expanded at leadership's request.</li>
+          <li>Manage a $2.5M annual operating budget by modeling cost and risk trade-offs against strategic priorities, aligning resources to the highest-impact technical operations and growth initiatives.</li>
+          <li>Replaced ineffective standard reporting by designing custom BI dashboards and fully automated reporting across NPI, sustaining support, installations, and service performance, giving leadership real-time, higher-integrity visibility.</li>
+          <li>Orchestrate cross-functional response during high-stakes escalations by building the data-backed case and coordinating sales, engineering, manufacturing, and C-suite stakeholders to secure resources and alignment without direct authority.</li>
+          <li>Led internal innovation initiatives, including a webstore prototype that ranked top 25% company-wide and scored highest in collaboration during the 2025 internal hackathon.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-top">
+          <div><span class="job-title">NPI Product Engineering Manager</span> <span class="job-co">— KLA Corporation, Ann Arbor, MI</span></div>
+          <span class="job-date">Mar 2022 – Mar 2024</span>
+        </div>
+        <ul>
+          <li>Owned service readiness for 10+ concurrent product launches by driving risk-mitigation, field-readiness, and design-for-service reviews with engineering, delivering on-time launches while scaling the team to full staffing within a year through internal headcount governance.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-top">
+          <div><span class="job-title">New Product Introduction (NPI) Engineer</span> <span class="job-co">— KLA Corporation, Ann Arbor, MI</span></div>
+          <span class="job-date">Mar 2021 – Mar 2022</span>
+        </div>
+        <ul>
+          <li>Built end-to-end product launch plans and ran reliability and service-cost analyses to forecast long-term costs and inform financial planning.</li>
+          <li>Created a Service Financial Modeling course later adopted across multiple divisions.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-top">
+          <div><span class="job-title">Metrology Engineer</span> <span class="job-co">— American Axle &amp; Manufacturing, Detroit, MI</span></div>
+          <span class="job-date">Apr 2017 – Dec 2020</span>
+        </div>
+        <ul>
+          <li>Advised global production teams on precision-metrology and surface-finish methods, improving part quality and process consistency.</li>
+          <li>Built a surface-finish metrology training program for ~30 associates, later becoming company-wide onboarding.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-top">
+          <div><span class="job-title">Business Development &amp; Applications Engineer (North America)</span> <span class="job-co">— Taylor Hobson (AMETEK), West Chicago, IL</span></div>
+          <span class="job-date">Jan 2014 – Apr 2017</span>
+        </div>
+        <ul>
+          <li>Solved a complex aerospace metrology application that competitors were unable to support, generating $1.2M in new revenue.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-top">
+          <div><span class="job-title">Staff Engineer</span> <span class="job-co">— Environmental Resources Management (ERM), Exton, PA</span></div>
+          <span class="job-date">May 2012 – Dec 2013</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="sec">Education</h2>
+      <div class="two">
+        <div class="item"><strong>Executive MBA</strong> — Michigan State University, Eli Broad College of Business (2022)</div>
+        <div class="item"><strong>B.S., Civil &amp; Environmental Engineering</strong> — University of Michigan (2012)</div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="sec">Leadership &amp; Certifications</h2>
+      <div class="two">
+        <div class="item">President (2024–Present) &amp; Secretary (2023–2024), MSU Executive MBA Alumni Board of Directors</div>
+        <div class="item">Microsoft Power Platform — Intermediate Applied Skills (full list on LinkedIn)</div>
+      </div>
+    </section>
+  </article>
+</body>
+</html>
