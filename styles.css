@@ -523,17 +523,12 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px)
 /* =========================================================
    RESPONSIVE
    ========================================================= */
-.bio-photos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-top: 24px;
-}
 .bio-photo {
-  margin: 0;
+  margin: 24px 0 0;
   border-radius: 10px;
   overflow: hidden;
-  aspect-ratio: 3/4;
+  max-width: 340px;
+  aspect-ratio: 4/3;
 }
 .bio-photo img {
   width: 100%;
@@ -551,11 +546,10 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px)
   .hero-grid { grid-template-columns: 1fr; gap: 0; }
   .hero-portrait { order: -1; justify-self: start; max-width: 200px; margin-bottom: 40px; }
   .status-chip { left: 0; transform: none; }
-  .bio-photos { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 520px) {
   body { font-size: 16px; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .btn { text-align: center; }
-  .bio-photos { grid-template-columns: 1fr; }
+  .bio-photo { max-width: 100%; }
 }
