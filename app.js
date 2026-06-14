@@ -52,13 +52,6 @@ const projects = [
     tags: ["Python", "RentCast API", "Analytics"],
     links: []
   },
-  {
-    title: "Career-Ops",
-    status: "public",
-    desc: "A multi-agent, AI-driven job-search system — automated research, application tracking, and CV tooling orchestrated across CLI agents. (Self-hosted; confirm how you want this attributed.)",
-    tags: ["Node.js", "Go", "Playwright", "AI Agents"],
-    links: [] // add a repo/live link if you want this public
-  }
 ];
 
 /* ---------- render cards ---------- */
