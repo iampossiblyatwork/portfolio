@@ -52,6 +52,15 @@ const projects = [
     tags: ["Python", "RentCast API", "Analytics"],
     links: []
   },
+  {
+    title: "Surface Finish — Pocket Dictionary",
+    status: "live",
+    desc: "An interactive reference tool for machined surface finishes — covering 12 standard roughness parameters (Ra, Rz, Rq, and more), 13 manufacturing processes with real-time trace visualization, side-by-side comparisons, and unit conversion between µm and µin. Grounded in ISO 4287, ASME B46.1, and ISO 1302.",
+    tags: ["React", "TypeScript", "Vite", "Canvas", "Metrology"],
+    links: [
+      { label: "Visit surfacefinish.onrender.com", url: "https://surfacefinish.onrender.com/" }
+    ]
+  },
 ];
 
 /* ---------- render cards ---------- */
