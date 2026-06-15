@@ -466,7 +466,7 @@ html[data-theme="dark"] { --s-technical:#3fd0bd; --s-business:#e3a44f; --s-data:
 
 .showcase-media {
   position: relative;
-  aspect-ratio: 4 / 3;
+  height: clamp(360px, 42vw, 500px);
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid var(--card-edge);
