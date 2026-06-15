@@ -45,11 +45,13 @@ const projects = [
   },
   {
     title: "EMBA ROI Calculator",
-    status: "public",
+    status: "live",
     strength: "business",
+    image: "assets/emba-roi.png",
     desc: "An interactive calculator that models the return on investment of the Michigan State Executive MBA — tuition, opportunity cost, and projected salary lift over time.",
     tags: ["JavaScript", "Finance", "Modeling"],
     links: [
+      { label: "Visit emba-roi.onrender.com", url: "https://emba-roi.onrender.com" },
       { label: "GitHub", url: "https://github.com/iampossiblyatwork/EMBA_ROI" }
     ]
   },
