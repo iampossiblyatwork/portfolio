@@ -56,6 +56,17 @@ const projects = [
     ]
   },
   {
+    title: "Options Premium Calculator",
+    status: "live",
+    strength: "business",
+    desc: "A Flask app for analyzing options trading strategies — covered calls, cash-secured puts, spreads, and more. Calculates premium, breakeven, and max profit/loss, with a risk-adjusted 'sweet spot' heatmap for covered calls and an interactive Black-Scholes sandbox.",
+    tags: ["Python", "Flask", "Black-Scholes", "Options"],
+    links: [
+      { label: "Visit optioncalculator-rcrz.onrender.com", url: "https://optioncalculator-rcrz.onrender.com/" },
+      { label: "GitHub", url: "https://github.com/iampossiblyatwork/OptionCalculator" }
+    ]
+  },
+  {
     title: "Dividend Optimizer",
     status: "private",
     strength: "business",
